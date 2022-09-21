@@ -1,0 +1,10 @@
+<md-card *ngIf="character">
+ <md-card-title>
+   Detalles del personaje
+ </md-card-title>
+  <md-card-content>
+    Localizaciones : {{character.locations}}<br>
+    Alive: {{character.alive}}<br>
+    <button md-button (click)="onClose()">Cerrar </button>
+  </md-card-content>
+</md-card>
